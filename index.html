@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Anniversary 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Quicksand',sans-serif;
+text-align:center;
+background:linear-gradient(180deg,#ffd6ec,#e4f3ff,#ffffff);
+color:#444;
+overflow-x:hidden;
+}
+
+/* container */
+
+.container{
+padding:40px 20px;
+max-width:600px;
+margin:auto;
+}
+
+/* title */
+
+h1{
+font-family:'Dancing Script', cursive;
+font-size:42px;
+color:#ff6fa5;
+margin-bottom:10px;
+}
+
+/* gif */
+
+.gif{
+width:220px;
+margin:20px auto;
+display:block;
+}
+
+/* message box */
+
+.message{
+background:linear-gradient(135deg,#ffffffcc,#ffe8f3cc,#e8f5ffcc);
+padding:25px;
+border-radius:25px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+margin-top:10px;
+line-height:1.7;
+font-size:16px;
+}
+
+/* footer */
+
+.footer{
+margin-top:30px;
+font-size:14px;
+color:#777;
+}
+
+/* petals */
+
+.petal{
+position:fixed;
+top:-20px;
+width:14px;
+height:14px;
+background:#ffb7d5;
+border-radius:60% 40% 60% 40%;
+opacity:0.8;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-10px) rotate(0deg);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>HAPPY 1 YEAR ANNIVERSARY BBY... 💕</h1>
+
+<img src="Romance Love GIF.gif" class="gif">
+
+<div class="message">  
+
+Heyyy my world 🌎💖...
+
+I just wanna say, you’re literally my everything... Every single day I’m just sittin’ here thinking how lucky I am to call you mine... You light up my life like no one else ever could... 🔥✨ I’m always waitin’ for you, no matter what, ‘cause being with you is the best part of my day... ⏳💘
+
+I’m so proud to be yours, and I hope you feel that love as much as I feel yours... 💕🙌 You make me smile even on my worst days, and I can’t even explain how much that means to me... 😭💫 I’m always here supportin’ you, cheering for you, and just hypin’ you up like you deserve... 🚀💯
+
+Honestly, you’ve changed my life in ways I didn’t even know I needed... ❤️🌈 And I swear, I’m gonna love you forever and ever, no cap, no doubts, just straight up us against the world... 🥹💞
+
+So yeah, thanks for being my fav hooman, my bestie, my love, my everything... 🫶🥰 I’m here, always, loving you harder than yesterday and less than tomorrow... 🌟💖
+
+Forever your ride-or-die... 💌✨
+Hasi 💖
+
+</div>
+
+<div class="footer">
+Made with love for you 💖
+</div>
+
+</div>
+
+<audio autoplay loop>
+<source src="Lauv - I Like Me Better [Official Audio].mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+/* falling petals */
+
+function createPetal(){
+
+const petal=document.createElement("div")
+petal.classList.add("petal")
+
+petal.style.left=Math.random()*100+"vw"
+
+const size=Math.random()*10+8
+petal.style.width=size+"px"
+petal.style.height=size+"px"
+
+petal.style.animationDuration=(6+Math.random()*5)+"s"
+
+document.body.appendChild(petal)
+
+setTimeout(()=>{
+petal.remove()
+},11000)
+
+}
+
+setInterval(createPetal,400)
+
+</script>
+
+</body>
+</html>
